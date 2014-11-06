@@ -7,11 +7,11 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">Startup's startup</a>
+        <a class="navbar-brand"> Startup's startup </a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link</a></li>
+            <li class="active add-startup"><a href="">ADD YOUR STARTUP</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             {{> loginButtons }} <!-- here -->
@@ -43,4 +43,25 @@
       <p>{{description}}</p>
       <p align="center"><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Read more</a></p>
     </div>
+</template>
+
+<template name="AddStartup">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h3>Add your startup! </h3>
+        <form>
+          <div class="form-group">
+            <label for="name">Name: </label>
+            <input name="name" type="text"/>
+          </div>
+          <div class="form-group">
+            <label for="description">Descr: </label>
+            <input name="descr" type="text"/>
+          </div>
+          <button class="btn btn-primary save">Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </template>

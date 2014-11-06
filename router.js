@@ -1,5 +1,9 @@
 Router.route('/', function () {
   this.render('Home', {
-    data: function () {  }
+  });
+});
+
+Router.route('/add', function () {
+  this.render('AddStartup', {
   });
 });
