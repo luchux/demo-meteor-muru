@@ -8,6 +8,7 @@ Meteor.startup(function () {
         name: "FanFuel",
         description: "37 billion dollars Sponsorship market, as easy as buying facebook ads!",
         image_src: "http://awesomefriday.ca/wp-content/uploads/2013/04/fry-bender.jpg",
+        votes_up: [],
       })
     }
   });
